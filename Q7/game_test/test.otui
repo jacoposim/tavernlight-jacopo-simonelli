@@ -1,0 +1,8 @@
+MainWindow
+  size: 500 400
+  @onEscape: modules.game_test.terminate()
+  
+  Button
+    id: movingButton
+    !text: tr('Jump!')
+    width: 50

@@ -1,0 +1,7 @@
+- Source that helped me: https://github.com/edubart/otclient/wiki/Module-Tutorial
+
+- New module creation in \otclient\modules\: module name "game_test" with the files test.otmod, test.otui, test.lua
+  (folder game_test in the repository)
+
+- Testing of the code after loading the new module in the client
+  (clip_Q7.mp4 in the repository)

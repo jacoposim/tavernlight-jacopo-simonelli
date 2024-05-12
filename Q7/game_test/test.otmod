@@ -1,0 +1,8 @@
+Module
+  name: game_test
+  description: Question 7
+  author: jacopo
+  sandboxed: true
+  scripts: [ test.lua ]
+  @onLoad: init()
+  @onUnload: terminate()
