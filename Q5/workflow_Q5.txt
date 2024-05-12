@@ -1,0 +1,16 @@
+- Replication of the effect server-side
+
+- New script "ice_tornado.lua" in \data\spells\scripts\attack (file ice_tornado.lua in the repository)
+
+- I found out what parameter I needed to replicate the tornado effect thanks to this source:
+  https://tibia.fandom.com/wiki/Ice_Tornado_Effect
+
+- Spell addition in \data\spells.xml (I show this addition in the file spells.xml of the repository)
+
+- After creating the area effect through the matrix, I didn't understand why the effect was not rendering properly, 
+  so I tried with another effect (CONST_ME_FIREAREA parameter, which I show in clip_Q5_fire.mp4 in the repository).
+  This effect worked well, so I ruled out that the problem might be the logic of the area (my first doubt).
+  I did some research and I found out that this effect has a rendering problem on edubart's otc: if the character is
+  not moving the tornado won't show properly, but it works if the character walks.
+  (clip_Q5.mp4 in the repository)
+  (source that helped me: https://otland.net/threads/issue-on-the-animation-of-eternal-winter.281595/)

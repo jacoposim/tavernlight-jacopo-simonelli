@@ -1,0 +1,4 @@
+<instant group="attack" spellid="001" name="Ice Tornado" words="frigo" level="1" mana="1" cooldown="4000" groupcooldown="4000" needlearn="0" script="attack/ice_tornado.lua">
+	<vocation name="Druid" />
+	<vocation name="Elder Druid" />
+</instant>
