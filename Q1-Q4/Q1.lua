@@ -12,11 +12,11 @@ function onLogout(player)
 end
 
 
---[[
-	Edits:
-		- introduction of STORAGE_ID constant to make the code more manageable and readable
-		- removal of external function call to avoid possible overhead
---]]
+
+-- Edits:
+-- 	- introduction of STORAGE_ID constant to make the code more manageable and readable
+-- 	- removal of external function call to avoid possible overhead
+
 
 local STORAGE_ID = 1000
 
