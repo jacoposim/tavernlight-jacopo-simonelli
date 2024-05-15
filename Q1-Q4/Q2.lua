@@ -7,14 +7,14 @@ function printSmallGuildNames(memberCount)
 end
 
 
---[[
-	Edits:
-		- usage of a prepared statement to avoid possible risks of SQL injection
-		- using a prepared statement, we don't need to format the parameter in the query anymore
-		- check of the query result and print if it is null
-		- if a result exists, we need to loop in it to print ALL guilds names
-		- query result closure (it's better to do it explicitly even if Lua has its own garbage collector)
---]]
+
+-- Edits:
+-- 	- usage of a prepared statement to avoid possible risks of SQL injection
+-- 	- using a prepared statement, we don't need to format the parameter in the query anymore
+-- 	- check of the query result and print if it is null
+-- 	- if a result exists, we need to loop in it to print ALL guilds names
+-- 	- query result closure (it's better to do it explicitly even if Lua has its own garbage collector)
+
 
 function printSmallGuildNames(memberCount)
 	local selectGuildQuery = "SELECT name FROM guilds WHERE max_members < ?" --prepared statement
